@@ -9,7 +9,7 @@ import { adminAuth, candidateRoute } from "../middleware/auth.middleware.js";
 
 const router = express.Router();
 
-router.get("/", candidateRoute, getAllCandidates);
+router.get("/", getAllCandidates);
 router.get("/:position", getCandidateByPosition);
 router.post("/", candidateRoute, adminAuth, createCandidate);
 router.delete("/:id", candidateRoute, adminAuth, deleteCandidate);
