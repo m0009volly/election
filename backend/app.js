@@ -22,7 +22,7 @@ const corsOptions = {
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
 
-app.use(express.json({ limit: "50mb" }));
+app.use(express.json({ limit: "10mb" }));
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
